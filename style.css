@@ -154,6 +154,13 @@ body {
     color: #1e293b;
 }
 
+#telaBemVindo p {
+    font-size: 1.1em;
+    color: #94a3b8; /* Cor mais suave */
+    text-align: center; /* Justificado ao centro */
+    margin-bottom: 30px;
+}
+
 .tela {
     position: absolute;
     top: 50%;
@@ -248,8 +255,8 @@ body {
 
 /* Menu de Customização */
 #menuCustomizacao {
-    width: 600px; /* Diminuído */
-    max-width: 90%;
+    width: 750px; /* Aumentado para acomodar a lista maior */
+    max-width: 95%;
     padding: 20px;
     background-color: rgba(15, 23, 42, 0.9); /* Mais transparente */
 }
@@ -303,12 +310,12 @@ body {
     display: grid; /* Mudei para grid para um alinhamento perfeito */
     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     gap: 10px;
-    max-height: 120px; /* Altura máxima para a área de scroll */
+    max-height: 250px; /* Aumentado significativamente */
     overflow-y: auto; /* Adiciona scroll se necessário */
     padding-right: 5px; /* Espaço para a barra de scroll */
 }
 
-.efeito-btn {
+.btn-efeito {
     width: 40px;
     height: 40px;
     background-color: #334155; /* Cor padrão mais harmônica */
@@ -317,19 +324,20 @@ body {
     border-radius: 8px; /* Bordas mais arredondadas */
     cursor: pointer;
     transition: all 0.2s;
-    font-size: 1.5em; /* Tamanho do emoji */
+    font-size: 1.8em; /* Aumenta o tamanho do símbolo */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
+    line-height: 1; /* Garante o alinhamento vertical */
 }
 
-.efeito-btn:hover {
+.btn-efeito:hover {
     background-color: #4f6d9e;
     transform: scale(1.1);
 }
 
-.efeito-btn.selecionado {
+.btn-efeito.active {
     background-color: #6366f1; /* Cor de destaque mais vibrante */
     border-color: #a5b4fc;
     box-shadow: 0 0 10px rgba(99, 102, 241, 0.7);
@@ -410,4 +418,14 @@ body {
     position: absolute;
     bottom: 15px;
     right: 15px;
+}
+
+svg{
+	width:100%;
+	height:100%;
+}
+span{
+	color:white;
+	font-family:sans-serif;
+	opacity:.3;
 }
